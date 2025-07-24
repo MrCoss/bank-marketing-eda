@@ -1,106 +1,62 @@
-📊 BANK MARKETING DATASET – EXPLORATORY DATA ANALYSIS (EDA)
+## Bank Marketing EDA – Skillfied Mentor Internship
 
-------------------------------------------------------------
-Project Title  : Bank Marketing Campaign – EDA & Insights
-Internship     : Skillfied Mentor Internship
-Submitted By   : Costas Antony Pinto
-Course         : MCA AI/ML – Manipal University Jaipur
-GitHub Repo    : https://github.com/MrCoss/bank-marketing-eda
-------------------------------------------------------------
+This project presents an in-depth Exploratory Data Analysis (EDA) of the Bank Marketing dataset using Python. The analysis includes data cleaning, visualization, feature engineering, and preparation for modeling. The insights help understand customer behavior toward term deposit subscriptions.
 
-🧾 OBJECTIVE:
-------------
-The objective of this project is to perform an in-depth exploratory data analysis on the Bank Marketing dataset to uncover meaningful insights, identify patterns, and prepare the dataset for machine learning tasks such as classification.
+## Project Structure
 
-📁 DIRECTORY STRUCTURE:
------------------------
-Banking Data Analysis/
-│
-├── data/
-│   ├── feature_importance.csv
-│   ├── skewness_report.csv
-│   ├── top_corr_features.csv
-│   ├── vif_report.csv
-│   ├── eda_summary.txt
-│   └── Bank_Marketing_EDA_Report.pdf
-│
-├── datasets/
-│   ├── bankmarketingdata.csv
-│   └── bankmarketing_cleaned.csv
-│
-├── plots/
-│   └── [all generated visualizations in PNG]
-│
-├── Bank_Marketing_Inspection_Final.ipynb
-├── requirements.txt
-└── README.txt
+- `datasets/` – Raw and cleaned data
+- `plots/` – Visualizations
+- `data/` – Reports and intermediate files
+- `Bank_Marketing_Inspection_Final.ipynb` – Main EDA Notebook
+- `Bank_Marketing_EDA_Report.pdf` – Final Report
+- `requirements.txt` – Required Python packages
 
-🧪 KEY STEPS PERFORMED:
------------------------
-1. Setup Environment and Folder Structure
-2. Load Dataset with Safe Fallback Delimiter Check
-3. Initial Inspection: Shape, Info, Description, Uniques
-4. Handle Missing Values (including "unknown")
-5. Impute Missing Values (Categorical → Mode, Numeric → Median)
-6. Drop Duplicate Records
-7. Visualize Target Variable Distribution
-8. Explore Categorical Features vs Target (Barplots)
-9. Encode Categorical Variables using LabelEncoder
-10. Analyze Class Imbalance and Apply SMOTE
-11. Feature Scaling with StandardScaler
-12. Correlation Matrix and Top Correlated Features
-13. Feature Importance using Random Forest
-14. Boxplots & Histograms for Numeric Analysis
-15. Feature Engineering (age_group, contacted_before, effective_contact)
-16. Handle Skewed Features via log1p
-17. Multicollinearity Check using VIF
-18. Save Final Cleaned Dataset
-19. Generate Text-based EDA Summary Report
-20. Create Final EDA PDF Report using ReportLab
+## Key Visualizations
 
-📄 FINAL OUTPUTS:
------------------
-- 📁 Cleaned CSV: `datasets/bankmarketing_cleaned.csv`
-- 📊 EDA Summary: `data/eda_summary.txt`
-- 📊 EDA PDF Report: `data/Bank_Marketing_EDA_Report.pdf`
-- 📈 Visualizations: `plots/` (Barplots, Heatmaps, Histograms)
+### 1. Target Variable Distribution
+![Target Distribution](plots/target_distribution.png)
 
-📦 ENVIRONMENT:
----------------
-- Python 3.10+
-- Key Libraries:
-  - pandas, numpy, seaborn, matplotlib
-  - scikit-learn, imbalanced-learn
-  - reportlab, missingno, statsmodels
+### 2. Correlation Heatmap
+![Correlation Heatmap](plots/correlation_heatmap.png)
 
-📌 TO SETUP LOCALLY:
---------------------
-1. Clone the repository:
-   git clone https://github.com/MrCoss/bank-marketing-eda
+### 3. Feature Importance (Random Forest)
+![Feature Importance](plots/feature_importance_rf.png)
 
-2. Create a virtual environment:
-   python -m venv venv
-   venv\Scripts\activate
+### 4. Class Distribution – Before and After SMOTE
+![Before SMOTE](plots/class_distribution_before_smote.png)
+![After SMOTE](plots/class_distribution_after_smote.png)
 
-3. Install dependencies:
-   pip install -r requirements.txt
+### 5. Categorical Features vs Target
+![Job vs Target](plots/barplot_job_y.png)
+![Education vs Target](plots/barplot_education_y.png)
+![Marital vs Target](plots/barplot_marital_y.png)
 
-4. Open Jupyter Notebook:
-   jupyter notebook Bank_Marketing_Inspection_Final.ipynb
+### 6. Log Transformation Example
+![Log Transform – Campaign](plots/log_transform_campaign.png)
 
-✔️ STATUS:
----------
-✅ Completed – All steps executed successfully
-✅ Reports saved in both TXT and PDF formats
-✅ Git repository updated and maintained
+## Summary
 
-📧 CONTACT:
-----------
-Costas Antony Pinto  
-Email: costaspinto312@gmail.com  
-GitHub: https://github.com/MrCoss  
+- Missing values handled and imputed
+- Class imbalance addressed with SMOTE
+- Label encoding and scaling applied
+- Top features identified via correlation and feature importance
+- Skewness treated and VIF calculated
+- Cleaned dataset and reports saved for modeling
 
-------------------------------------------------------------
-This project was completed under the Skillfied Mentor Internship.
-All work is original and reproducible.
-------------------------------------------------------------
+## Setup & Usage
+git clone https://github.com/MrCoss/bank-marketing-eda
+cd bank-marketing-eda
+pip install -r requirements.txt
+
+Open the notebook to explore the full analysis:
+
+jupyter notebook Bank_Marketing_Inspection_Final.ipynb
+
+Author
+
+Costas Antony Pinto
+MCA AI & ML |
+Manipal University Jaipur  
+Skillfied Mentor Internship
+
+---
