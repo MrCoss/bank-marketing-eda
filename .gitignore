@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv/
+venv/
+ENV/
+env.bak/
+env/
+
+# macOS metadata
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# PDF and HTML reports
+*.pdf
+*.html
+
+# Plot images
+plots/*.png
+
+# Dataset and intermediate files
+data/*.csv
+data/*.txt
+datasets/*.csv
+
+# Auto-generated reports
+Bank_Marketing_EDA_Report.pdf
+Bank_Marketing_EDA_Analysis.py
+
+# Hidden Jupyter runtime
+~$*
