@@ -127,5 +127,4 @@ This will open a new tab in your web browser. Navigate to and open the `Bank_Mar
 ## 6\. Author & Acknowledgements
 
   - **Author:** Costas Antony Pinto
-  - **Affiliation:** Manipal University Jaipur | MCA AI & ML
   - **Internship:** This project was completed as part of the **Skillfied Mentor Internship** program.
